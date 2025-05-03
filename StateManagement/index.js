@@ -805,7 +805,8 @@ export const StateManagementProvider = ({children}) => {
 
         // let dextoolapi = "https://public-api.dextools.io/trial/v2/token/ether?sort=socialsInfoUpdated&order=asc&from=2023-10-01T00:00:00.000Z&to=2024-11-01T00:00:00.000Z"
 
-        const apiKey = "RhHELjiBDT0jc8p1XZ5E3ZkA0dosXqa8smIuL5s7";
+        const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
 
         const resp = await axios.get(dextoolapi , {
 
