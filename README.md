@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 Deployed link: https://magmar-wallet.vercel.app/login
+
 First, run the development server:
 
 ```bash
