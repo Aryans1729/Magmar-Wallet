@@ -1,0 +1,41 @@
+{
+  "name": "magmar_wallet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@covalenthq/client-sdk": "^0.9.8",
+    "@tanstack/react-query": "^5.62.14",
+    "@web3auth/base": "^8.0.0",
+    "@web3auth/ethereum-provider": "^8.0.1",
+    "@web3auth/modal": "^8.4.0",
+    "@web3auth/modal-react-hooks": "^9.5.1",
+    "@zerodev/presets": "^5.1.4",
+    "@zerodev/sdk": "^5.1.11",
+    "axios": "^1.7.2",
+    "bignumber.js": "^4.0.4",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1",
+    "next": "14.0.2",
+    "qrcode.react": "^3.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "react-notifications-component": "^4.0.1",
+    "react-tippy": "^1.4.0",
+    "react-toastify": "^10.0.5",
+    "wagmi": "^2.14.6",
+    "web3": "^4.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}

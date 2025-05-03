@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+body {
+  color: white;
+  /* background: linear-gradient(to bottom right, #27272b, #131113) */
+  /* background-color: #0c0a0c; */
+  background: #000000;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background-image: url("./assets/images/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+.bg_container { 
+  background-image: url("./assets/images/BG.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+header {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+button:hover {
+  color: #b82300;
+  transition-duration: 0.2s;
+}
+
+.red-container {
+  background: #ad2100;
+}
+
+.shadow-container {
+  /* box-shadow: 0px 0px 20px 4px #090909; */
+  background: rgba(14, 14, 14, 0.7);
+  border-radius: 20px;
+  padding: 45px;
+}
+
+.fire-bg {
+  background: #b82300;
+}
+
+.divStyle {
+  background-image: url("../app/assets/images/banner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+}
+
+.link {
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  padding: 10px 15px;
+}
+
+.link:hover {
+  color: white;
+  background: linear-gradient(to bottom right, #af3f25, #5d1200, #b82300);
+}
+
+.link-selected {
+  background: linear-gradient(to bottom right, #af3f25, #5d1200, #b82300);
+}
+
+.nav-drawer {
+  /* background: linear-gradient(to bottom, #86191b, #86191b); */
+}
+
+input,
+select {
+  background-color: #27272b;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  background-color: #27272b;
+  width: fit-content;
+  padding: 5px 25px;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+button:hover {
+  color: #ad2100;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.login-bg {
+  background-image: url("./assets/images/1.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer-bg {
+  background-image: url("./assets/images/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.logo-login {
+  box-shadow: 0px 0px 20px 4px red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_btn {
+  background: linear-gradient(to bottom, #eca757, #ff6601);
+  transition-duration: 0.2s;
+}
+
+.login_btn:hover {
+  background: linear-gradient(to bottom, #ffc079, #ff6600);
+  color: white;
+  scale: 1.02;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow-container {
+    padding: 20px;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.assets-per {
+  background: linear-gradient(269deg, #ad2100 -11.69%, #fa9fa5 112.48%);
+  animation: progress 0.4s ease-in-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
