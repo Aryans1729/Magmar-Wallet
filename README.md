@@ -1,3 +1,41 @@
+# 🧱 Magmar Wallet
+
+Magmar Wallet is a decentralized, non-custodial web wallet built using **Next.js** that enables users to seamlessly manage their digital assets and interact with blockchain-based applications. It focuses on delivering a secure and intuitive experience for users to **view balances, perform token transfers, and interact with on-chain smart contracts** — all within a sleek and responsive UI.
+
+🔗 **Live Demo**: [https://magmar-wallet.vercel.app/login](https://magmar-wallet.vercel.app/login)
+
+---
+
+## 🚀 Features
+
+- 🔐 **Secure Wallet Login** via custom backend/auth mechanism.
+- 🧾 **View Wallet Balances** for supported tokens across multiple chains.
+- 💸 **Send & Receive Tokens** with real-time gas estimation.
+- 🔄 **Network Switching & Chain Detection**
+- 📜 **Smart Contract Interaction** (for supported contracts)
+- ⚡️ **Fast and responsive UI** powered by TailwindCSS and React.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/), React, TailwindCSS
+- **Blockchain**: Web3.js / Ethers.js
+- **Backend (optional)**: Node.js, Express
+- **Deployment**: Vercel
+
+---
+
+## 🧑‍💻 Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Aryans1729/Magmar-Wallet.git
+cd Magmar-Wallet
+npm install
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
